@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#define BENCODE_IMPL
 #include "../bencode.h"
 
 #if _WIN32

@@ -5,8 +5,8 @@ CFLAGS  = -ansi -pedantic -Wall -Wextra -Wno-missing-field-initializers \
 LDFLAGS =
 LDLIBS  =
 
-tests/tests: tests/tests.c bencode.c bencode.h
-	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ tests/tests.c bencode.c $(LDLIBS)
+tests/tests: tests/tests.c bencode.h
+	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ tests/tests.c bencode.h $(LDLIBS)
 
 check: tests/tests
 	tests/tests
